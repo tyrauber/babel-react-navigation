@@ -5,8 +5,8 @@ import ReactDOMServer from 'react-dom/server';
 import { AppRegistry } from 'react-native';
 import { View } from "react-native";
 
-import App from './App'; // Works
-//import App from './AppNav'; // Fails
+//import App from './App'; // Works
+import App from './AppNav'; // Works, with the --ignore flag
 AppRegistry.registerComponent('App', () => App);
 
 const app = new Koa();

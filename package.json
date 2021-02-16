@@ -1,7 +1,7 @@
 {
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node index.js",
+    "dev": "nodemon index.js --exec \"babel-node --ignore '/node_modules/(?!@react-navigation)'\"",
     "build": "webpack",
     "start": "node dist"
   },
